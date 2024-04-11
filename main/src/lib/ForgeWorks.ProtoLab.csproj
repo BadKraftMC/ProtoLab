@@ -5,5 +5,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <RootNamespace>ForgeWorks.ProtoLab</RootNamespace>
+    <RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="OpenTK.Mathematics" />
+	  <Using Include="OpenTK.Graphics.OpenGL4" />
+    <Using Include="OpenTK.Windowing.Common" />
+    <Using Include="OpenTK.Windowing.Desktop" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="OpenTK" Version="4.8.2" />
+  </ItemGroup>
 </Project>
