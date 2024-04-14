@@ -10,12 +10,20 @@
 
   <ItemGroup>
     <Using Include="OpenTK.Mathematics" />
-	  <Using Include="OpenTK.Graphics.OpenGL4" />
+    <Using Include="OpenTK.Graphics.OpenGL4" />
     <Using Include="OpenTK.Windowing.Common" />
     <Using Include="OpenTK.Windowing.Desktop" />
+    <using Include="ForgeWorks.RailThorn.Windows" />
+    <Using Include="OpenTK.Windowing.GraphicsLibraryFramework" />
   </ItemGroup>
-  
+
   <ItemGroup>
+    <Reference Include="ForgeWorks.ProtoLab.Configurators">
+      <HintPath>..\..\dlls\ForgeWorks.ProtoLab.Configurator.dll</HintPath>
+    </Reference>
+    <Reference Include="ForgeWorks.RailThorn.Windows">
+      <HintPath>..\..\dlls\ForgeWorks.RailThorn.Windows.dll</HintPath>
+    </Reference>
     <PackageReference Include="OpenTK" Version="4.8.2" />
   </ItemGroup>
 </Project>

@@ -8,13 +8,12 @@ using (var app = new ProtoLab())
     app.Run();
 }
 
-Console.Read();
-
 namespace ForgeWorks.ProtoLab
 {
     internal partial class ProtoLab : IDisposable
     {
         private IPlatform Platform { get; }
+        private Window _Window { get; }
 
         internal bool IsDisposed { get; set; }
 
@@ -22,21 +21,14 @@ namespace ForgeWorks.ProtoLab
         {
             Platform = GetPlatform();
             Platform.Initialize();
+            _Window = new(new AppView());
 
             Console.WriteLine($"ForgeWorks.ProtoLab [{Platform.Name} ({Platform.Version})]");
         }
 
         internal void Run()
         {
-            const int ESC = (int)ConsoleKey.Escape;
-
-            int key = 27;
-
-            while ((key = Console.Read()) != ESC)
-            {
-                //  what to do... ???
-            }
-
+            _Window.Run();
             Console.WriteLine("Exiting ForgeWorks.ProtoLab ... ");
         }
 
@@ -62,4 +54,5 @@ namespace ForgeWorks.ProtoLab
         }
         #endregion
     }
+
 }

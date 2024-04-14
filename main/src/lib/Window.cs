@@ -4,12 +4,13 @@ namespace ForgeWorks.ProtoLab;
 
 internal partial class ProtoLab
 {
-    private Window _window;
-
-    private class Window : GameWindow
+    private class Window : GameWindow, RailThorn.Windows.IGraphicsContext, IInputContext
     {
         private IView View { get; set; }
 
+        public IInputContext Input => throw new NotImplementedException();
+
+        #region Constructor
         public Window(IView view) : base(GameWindowSettings.Default, new NativeWindowSettings()
         {
             ClientSize = view.ClientSize,
@@ -21,7 +22,7 @@ internal partial class ProtoLab
         {
             SetView(view);
         }
-
+        #endregion
 
         #region View overrides
         protected override void OnClosing(CancelEventArgs args)
@@ -54,6 +55,7 @@ internal partial class ProtoLab
         }
         protected override void OnLoad()
         {
+            View.Init(this);
             View.OnLoad();
         }
         protected override void OnMaximized(MaximizedEventArgs args)
@@ -135,4 +137,16 @@ internal partial class ProtoLab
                 IsVisible = view.IsVisible;
             }
         }
+
+        public KeyboardState GetKeyboardState()
+        {
+            return KeyboardState;
+        }
+
+        public MouseState GetMouseState()
+        {
+            return MouseState;
+        }
     }
+
+}
