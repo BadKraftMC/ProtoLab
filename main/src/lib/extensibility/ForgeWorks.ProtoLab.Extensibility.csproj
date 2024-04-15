@@ -3,5 +3,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
+    <RootNamespace>ForgeWorks.ProtoLab.</RootNamespace>
+    <AssemblyName>ForgeWorks.ProtoLab.Extensibility</AssemblyName>
   </PropertyGroup>
 </Project>

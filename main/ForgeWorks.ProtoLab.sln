@@ -7,11 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{F9A81229-4BF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{B0CEFAA5-B54D-40D2-8EED-CE7590DC00A3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{BD95C0C0-83EB-4241-AF43-F3A71ABD38F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoLab", "src\lib\protolab\ForgeWorks.ProtoLab.csproj", "{37101939-B1B0-4A50-B55D-2490F2A0E010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoLab", "src\lib\ForgeWorks.ProtoLab.csproj", "{37101939-B1B0-4A50-B55D-2490F2A0E010}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configurator", "src\tools\configurator\ForgeWorks.ProtoLab.Configurator.csproj", "{26B2BD97-3C5A-4142-B098-40D3E1EB727F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensibility", "src\lib\extensibility\ForgeWorks.ProtoLab.Extensibility.csproj", "{26B2BD97-3C5A-4142-B098-40D3E1EB727F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Config.01", "src\dev\test_cfg_01\ProtoLab.Sample.Configurator.01.csproj", "{B6A1CAE9-5225-46E5-B8BB-502A6C235236}"
 EndProject
@@ -64,7 +62,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{37101939-B1B0-4A50-B55D-2490F2A0E010} = {B0CEFAA5-B54D-40D2-8EED-CE7590DC00A3}
-		{26B2BD97-3C5A-4142-B098-40D3E1EB727F} = {BD95C0C0-83EB-4241-AF43-F3A71ABD38F7}
+		{26B2BD97-3C5A-4142-B098-40D3E1EB727F} = {B0CEFAA5-B54D-40D2-8EED-CE7590DC00A3}
 		{B6A1CAE9-5225-46E5-B8BB-502A6C235236} = {F9A81229-4BF8-4B50-9C14-1A895506CC8E}
 	EndGlobalSection
 EndGlobal

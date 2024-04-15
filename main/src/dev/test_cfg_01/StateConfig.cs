@@ -11,6 +11,7 @@ public class StateConfig
         execute = "write_line"
     };
 
+    //  this can go anywhere; not required to be in Integration class
     [StateAction("write_line")]
     private void WriteLine()
     {
