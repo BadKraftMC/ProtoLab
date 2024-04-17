@@ -7,20 +7,29 @@
     <RootNamespace>ForgeWorks.ProtoLab</RootNamespace>
     <RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
   </PropertyGroup>
+
   <ItemGroup>
     <Using Include="OpenTK.Mathematics" />
     <Using Include="OpenTK.Graphics.OpenGL4" />
     <Using Include="OpenTK.Windowing.Common" />
     <Using Include="OpenTK.Windowing.Desktop" />
+    <Using Include="ForgeWorks.CrossWind" />
     <Using Include="ForgeWorks.RailThorn.Windows" />
     <Using Include="OpenTK.Windowing.GraphicsLibraryFramework" />
   </ItemGroup>
+  
   <ItemGroup>
-    <Reference Include="ForgeWorks.ProtoLab.Extensibility">
-      <HintPath>..\..\..\dlls\ForgeWorks.ProtoLab.Extensibility.dll</HintPath>
+    <Reference Include="ForgeWorks.CrossWind">
+      <HintPath>..\..\..\dlls\ForgeWorks.CrossWind.dll</HintPath>
+    </Reference>
+    <Reference Include="ForgeWorks.CrossWind.Domain">
+      <HintPath>..\..\..\dlls\ForgeWorks.CrossWind.Domain.dll</HintPath>
     </Reference>
     <Reference Include="ForgeWorks.RailThorn.Windows">
       <HintPath>..\..\..\dlls\ForgeWorks.RailThorn.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="ForgeWorks.ProtoLab.Extensibility">
+      <HintPath>..\..\..\dlls\ForgeWorks.ProtoLab.Extensibility.dll</HintPath>
     </Reference>
     <PackageReference Include="OpenTK" Version="4.8.2" />
   </ItemGroup>

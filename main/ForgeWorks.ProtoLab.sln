@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoLab", "src\lib\protola
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensibility", "src\lib\extensibility\ForgeWorks.ProtoLab.Extensibility.csproj", "{26B2BD97-3C5A-4142-B098-40D3E1EB727F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Config.01", "src\dev\test_cfg_01\ProtoLab.Sample.Configurator.01.csproj", "{B6A1CAE9-5225-46E5-B8BB-502A6C235236}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Config.01", "src\dev\test_cfg_01\ProtoLab.Sample.Config.01.csproj", "{B6A1CAE9-5225-46E5-B8BB-502A6C235236}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

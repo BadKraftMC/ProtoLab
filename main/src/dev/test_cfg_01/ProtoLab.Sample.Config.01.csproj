@@ -5,8 +5,6 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ForgeWorks.ProtoLab.Configurators">
-      <HintPath>..\..\..\dlls\ForgeWorks.ProtoLab.Configurator.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\lib\extensibility\ForgeWorks.ProtoLab.Extensibility.csproj" />
   </ItemGroup>
 </Project>
