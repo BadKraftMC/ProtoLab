@@ -7,7 +7,6 @@
     <RootNamespace>ForgeWorks.ProtoLab</RootNamespace>
     <RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
   </PropertyGroup>
-
   <ItemGroup>
     <Using Include="OpenTK.Mathematics" />
     <Using Include="OpenTK.Graphics.OpenGL4" />
@@ -15,9 +14,9 @@
     <Using Include="OpenTK.Windowing.Desktop" />
     <Using Include="ForgeWorks.CrossWind" />
     <Using Include="ForgeWorks.RailThorn.Windows" />
+    <Using Include="ForgeWorks.BroadStack.Workflow" />
     <Using Include="OpenTK.Windowing.GraphicsLibraryFramework" />
   </ItemGroup>
-  
   <ItemGroup>
     <Reference Include="ForgeWorks.CrossWind">
       <HintPath>..\..\..\dlls\ForgeWorks.CrossWind.dll</HintPath>
@@ -32,5 +31,8 @@
       <HintPath>..\..\..\dlls\ForgeWorks.ProtoLab.Extensibility.dll</HintPath>
     </Reference>
     <PackageReference Include="OpenTK" Version="4.8.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\BroadStack\main\src\lib\ForgeWorks.BroadStack.csproj" />
   </ItemGroup>
 </Project>

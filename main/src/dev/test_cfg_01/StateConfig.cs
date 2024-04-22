@@ -7,7 +7,7 @@ public class StateConfig
 {
     public StateConfiguration state_config { get; set; } = new()
     {
-        on_state = "on_loaded",
+        on_state = "launch.execute",
         execute = "write_line"
     };
 
