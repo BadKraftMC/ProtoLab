@@ -3,15 +3,13 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <RootNamespace>ForgeWorks.ProtoLab.OpenTest</RootNamespace>
-    <RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
   </PropertyGroup>
+
   <ItemGroup>
-  
+    <Using Include="ProtoLab.OpenTest" />
   </ItemGroup>
-  
+
   <ItemGroup>
-
-
+    <ProjectReference Include="..\..\lib\opentest.lib\ProtoLab.OpenTest.Library.csproj" />
   </ItemGroup>
 </Project>
