@@ -1,12 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
-<ItemGroup>
+  <ItemGroup>
+    <Using Include="ProtoLab.OpenTest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\lib\opentest.lib\ProtoLab.OpenTest.Library.csproj" />
   </ItemGroup>
 </Project>
