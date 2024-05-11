@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch SM Dev 02",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build SM Dev 02",
+            "program": "${workspaceFolder}/bin/testing/OpenTest",
+            "args": [
+                "-s SM_Dev_02"
+            ],
+            "cwd": "${workspaceFolder}/bin/testing",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },]
+}

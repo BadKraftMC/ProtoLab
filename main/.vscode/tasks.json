@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "build OpenTest",
+            "type": "process",
+            "group": "build",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/lib/opentest/ProtoLab.OpenTest.csproj",
+                "/property:GenerateFullPaths=true",
+                "-o",
+                "${workspaceFolder}/bin/testing"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build SM Dev 02",
+            "type": "process",
+            "group": "build",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/dev/SM_Dev_02/SM_Dev_02.csproj",
+                "/property:GenerateFullPaths=true",
+                "-o",
+                "${workspaceFolder}/bin/testing/SM_Dev_02"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
